@@ -1,0 +1,11 @@
+@import "./abstract/variable.css";
+@import "./theme-color/skin.css";
+@import "./layout/layout.css";
+@import "./base/base.css";
+@import "./component/component.css";
+@import "./pages/pages.css";
+@import "../vendor/xmenu/xmenu.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

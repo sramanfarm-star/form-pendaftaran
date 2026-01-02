@@ -1,0 +1,114 @@
+.btn {
+  @apply inline-flex items-center justify-center relative overflow-hidden whitespace-nowrap cursor-pointer border border-solid duration-500;
+  padding: 14px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: var(--btn-radius, 50px);
+  line-height: 1.25;
+}
+
+.btn-rounded {
+  @apply rounded-full;
+}
+
+.btn-hover1::after {
+  @apply content-[''] absolute z-[-1] duration-500 bg-black/10 w-0 h-full left-0 top-0;
+}
+
+.btn-hover1:hover::after {
+  @apply w-full;
+}
+
+.btn-square {
+  @apply size-12 p-0 inline-flex items-center justify-center transition-all duration-500 text-2xl;
+}
+
+.btn.btn-outline-light {
+  @apply text-secondary;
+  border-color: rgba(var(--primary-rgb), 0.3);
+}
+
+.btn-icon {
+  @apply inline-flex items-center;
+}
+
+.btn-lg {
+  @apply py-4.5 px-6.25 text-lg;
+  padding: 18px 30px;
+}
+
+.btn-sm {
+  @apply py-2.75 px-5 text-sm;
+  padding: 11px 20px;
+}
+
+.btn-primary {
+  @apply text-white bg-primary border-primary hover:bg-primarydark hover:border-primarydark;
+}
+
+.btn-secondary {
+  @apply text-white bg-secondary border-secondary hover:bg-secondarydark hover:border-secondarydark;
+}
+
+.btn-success {
+  @apply text-white bg-success border-success hover:bg-success-hover hover:border-success-hover;
+}
+
+.btn-info {
+  @apply text-white bg-info border-info hover:bg-info-hover hover:border-info-hover;
+}
+
+.btn-warning {
+  @apply text-white bg-warning border-warning hover:bg-warning-hover hover:border-warning-hover;
+}
+
+.btn-danger {
+  @apply text-white bg-danger border-danger hover:bg-danger-hover hover:border-danger-hover;
+}
+
+.btn-link {
+  @apply border-0 text-primary bg-transparent underline;
+}
+
+.btn-primary-outline {
+  @apply text-primary bg-transparent border-primary hover:bg-primarydark hover:border-primarydark hover:text-white;
+}
+
+.btn-secondary-outline {
+  @apply text-secondary bg-transparent border-secondary hover:bg-secondarydark hover:border-secondarydark hover:text-white;
+}
+
+.btn-success-outline {
+  @apply text-success bg-transparent border-success hover:bg-success-hover hover:border-success-hover hover:text-white;
+}
+
+.btn-info-outline {
+  @apply text-info bg-transparent border-info hover:bg-info-hover hover:border-info-hover hover:text-white;
+}
+
+.btn-warning-outline {
+  @apply text-warning bg-transparent border-warning hover:bg-warning-hover hover:border-warning-hover hover:text-white;
+}
+
+.btn-danger-outline {
+  @apply text-danger bg-transparent border-danger hover:bg-danger-hover hover:border-danger-hover hover:text-white;
+}
+
+.btn-white {
+  @apply bg-white text-secondary border-white;
+}
+
+.btn-light {
+  @apply bg-light text-primary border-light;
+}
+
+.btn-white:hover {
+  @apply bg-secondary text-white border-secondary;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-lg {
+    @apply py-3.75 px-5 text-base;
+    padding: 15px 20px;
+  }
+}
